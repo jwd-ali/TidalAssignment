@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistTableViewCell" rowHeight="128" id="KGk-i7-Jjw" customClass="ArtistTableViewCell" customModule="DeezerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="638" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="638" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbB-XK-nWK">
+                        <rect key="frame" x="16" y="10" width="606" height="108"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="82M-AS-hWh">
+                                <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-PK-wlT">
+                                <rect key="frame" x="124" y="43" width="482" height="22.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6lN-PK-wlT" firstAttribute="leading" secondItem="82M-AS-hWh" secondAttribute="trailing" constant="16" id="34D-jc-M86"/>
+                            <constraint firstAttribute="trailing" secondItem="6lN-PK-wlT" secondAttribute="trailing" id="G7I-cj-7EB"/>
+                            <constraint firstItem="6lN-PK-wlT" firstAttribute="centerY" secondItem="CbB-XK-nWK" secondAttribute="centerY" id="P5q-o4-v9M"/>
+                            <constraint firstItem="82M-AS-hWh" firstAttribute="centerY" secondItem="CbB-XK-nWK" secondAttribute="centerY" id="X3J-Fs-Hz4"/>
+                            <constraint firstItem="82M-AS-hWh" firstAttribute="width" secondItem="CbB-XK-nWK" secondAttribute="height" id="Yxc-sa-8DS"/>
+                            <constraint firstItem="82M-AS-hWh" firstAttribute="leading" secondItem="CbB-XK-nWK" secondAttribute="leading" id="lQh-wN-ela"/>
+                            <constraint firstItem="82M-AS-hWh" firstAttribute="height" secondItem="CbB-XK-nWK" secondAttribute="height" id="of2-Eg-ZDb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqu-Ps-qaK">
+                        <rect key="frame" x="129" y="127.5" width="509" height="0.5"/>
+                        <color key="backgroundColor" white="0.67000000000000004" alpha="0.47434576303680981" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.29999999999999999" id="qwL-5O-bmL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nqu-Ps-qaK" firstAttribute="leading" secondItem="82M-AS-hWh" secondAttribute="trailing" constant="5" id="2h7-VX-c33"/>
+                    <constraint firstAttribute="bottom" secondItem="nqu-Ps-qaK" secondAttribute="bottom" id="6EZ-A4-Mbl"/>
+                    <constraint firstAttribute="trailing" secondItem="nqu-Ps-qaK" secondAttribute="trailing" id="Dow-KC-5HE"/>
+                    <constraint firstItem="CbB-XK-nWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Txl-dr-ycK"/>
+                    <constraint firstAttribute="trailing" secondItem="CbB-XK-nWK" secondAttribute="trailing" constant="16" id="bHZ-Hq-5Oo"/>
+                    <constraint firstAttribute="bottom" secondItem="CbB-XK-nWK" secondAttribute="bottom" constant="10" id="cbu-J6-kA9"/>
+                    <constraint firstItem="CbB-XK-nWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h2F-VN-VKz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="Primary"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistImageView" destination="82M-AS-hWh" id="Xac-yT-Rum"/>
+                <outlet property="artistTitleLabel" destination="6lN-PK-wlT" id="xnG-D0-RLf"/>
+            </connections>
+            <point key="canvasLocation" x="363.768115942029" y="182.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="112.5" height="112.5"/>
+        <namedColor name="Primary">
+            <color red="0.10588235294117647" green="0.10980392156862745" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

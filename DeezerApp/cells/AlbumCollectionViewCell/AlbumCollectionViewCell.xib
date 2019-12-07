@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCollectionViewCell" id="gTV-IL-0wX" customClass="AlbumCollectionViewCell" customModule="DeezerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="430"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="430"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lus-zs-fdj">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="430"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zP-d7-AMD">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="430"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BHF-1u-Urx">
+                                        <rect key="frame" x="0.0" y="390" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUR-Sp-MAb">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lf-dl-5ix">
+                                                <rect key="frame" x="0.0" y="20" width="374" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PU0-Qw-b5d"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-8M-JRr">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="382"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BHF-1u-Urx" firstAttribute="leading" secondItem="6zP-d7-AMD" secondAttribute="leading" id="HzI-ot-qIk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xel-8M-JRr" secondAttribute="trailing" id="M1J-pN-ySu"/>
+                                    <constraint firstItem="Xel-8M-JRr" firstAttribute="leading" secondItem="6zP-d7-AMD" secondAttribute="leading" id="PR9-XH-Vwl"/>
+                                    <constraint firstAttribute="bottom" secondItem="BHF-1u-Urx" secondAttribute="bottom" id="csx-rd-kh2"/>
+                                    <constraint firstAttribute="trailing" secondItem="BHF-1u-Urx" secondAttribute="trailing" id="gMc-xQ-ZKE"/>
+                                    <constraint firstItem="Xel-8M-JRr" firstAttribute="top" secondItem="6zP-d7-AMD" secondAttribute="top" id="rps-Fg-3jG"/>
+                                    <constraint firstItem="BHF-1u-Urx" firstAttribute="top" secondItem="Xel-8M-JRr" secondAttribute="bottom" constant="8" id="vrD-b7-3Es"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6zP-d7-AMD" secondAttribute="trailing" id="5Dm-aY-XhP"/>
+                            <constraint firstAttribute="bottom" secondItem="6zP-d7-AMD" secondAttribute="bottom" id="GS2-jV-t0O"/>
+                            <constraint firstItem="6zP-d7-AMD" firstAttribute="top" secondItem="lus-zs-fdj" secondAttribute="top" id="awA-8g-wI6"/>
+                            <constraint firstItem="6zP-d7-AMD" firstAttribute="leading" secondItem="lus-zs-fdj" secondAttribute="leading" id="cFB-PY-XEa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lus-zs-fdj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HL1-fq-2w3"/>
+                <constraint firstItem="lus-zs-fdj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PvJ-YS-zbH"/>
+                <constraint firstAttribute="bottom" secondItem="lus-zs-fdj" secondAttribute="bottom" id="lXT-p3-B6T"/>
+                <constraint firstAttribute="trailing" secondItem="lus-zs-fdj" secondAttribute="trailing" id="oqF-Yf-eAY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="374" height="430"/>
+            <connections>
+                <outlet property="albumImageView" destination="Xel-8M-JRr" id="TTg-Jw-6du"/>
+                <outlet property="albumSubtitleLabel" destination="2Lf-dl-5ix" id="7Gh-kA-3cj"/>
+                <outlet property="albumTitleLabel" destination="mUR-Sp-MAb" id="qsS-4i-VuZ"/>
+            </connections>
+            <point key="canvasLocation" x="-266.66666666666669" y="40.848214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="112.5" height="112.5"/>
+        <namedColor name="Primary">
+            <color red="0.10588235294117647" green="0.10980392156862745" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
