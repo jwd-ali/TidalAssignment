@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DeezerApp
+
+  Created by Praveen on 08/12/19.
+  Copyright © 2019 Praveen. All rights reserved.
+*/
+
+"TIDAL_MUSIC" = "Tidal Music";
+"SEARCH_ARTISTS" = "Search Artists";
+
+"ALBUM" = "Album";
+"ALBUM_HEADER_SUBTITLE" = "Stream your favorite songs and discover new music on TIDAL with the largest streaming catalog available.";

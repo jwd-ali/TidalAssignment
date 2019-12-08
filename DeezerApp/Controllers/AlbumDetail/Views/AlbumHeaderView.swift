@@ -45,12 +45,12 @@ class HeaderView: UICollectionReusableView {
         gradientLayer.frame = self.bounds
         gradientLayer.frame.origin.y -= bounds.height
         
-        heavyLabel.text = "Album"
+        heavyLabel.text = "ALBUM".localized
         heavyLabel.font = .systemFont(ofSize: 24, weight: .heavy)
         heavyLabel.textColor = .white
         
         let descriptionLabel = UILabel()
-        descriptionLabel.text = "Stream your favorite songs and discover new music on TIDAL with the largest streaming catalog available."
+        descriptionLabel.text = "ALBUM_HEADER_SUBTITLE".localized
         descriptionLabel.font = .systemFont(ofSize: 14, weight: .regular)
         descriptionLabel.textColor = .white
         descriptionLabel.numberOfLines = 0

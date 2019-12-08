@@ -12,6 +12,10 @@
 		AC1F65D7239955C00077B333 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1F65D5239955C00077B333 /* AlbumsViewController.swift */; };
 		AC1F65D8239955C00077B333 /* AlbumsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1F65D6239955C00077B333 /* AlbumsViewController.xib */; };
 		AC1F65DA239A0DC80077B333 /* AlbumCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1F65D9239A0DC80077B333 /* AlbumCollectionViewDataSource.swift */; };
+		AC2D3AEB239D66FF006104AF /* AlbumsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D3AEA239D66FF006104AF /* AlbumsViewControllerDelegate.swift */; };
+		AC2D3AEE239D6799006104AF /* SearchViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D3AED239D6799006104AF /* SearchViewControllerDelegate.swift */; };
+		AC2D3AF0239D6ED2006104AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2D3AEF239D6ED2006104AF /* Localizable.strings */; };
+		AC2D3AF2239D6F81006104AF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D3AF1239D6F81006104AF /* StringExtension.swift */; };
 		AC3CE79D2398266300EB8762 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CE79C2398266300EB8762 /* UIColorExtension.swift */; };
 		AC3CE79F2398289100EB8762 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CE79E2398289100EB8762 /* Navigator.swift */; };
 		AC3CE7A52398292A00EB8762 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CE7A32398292A00EB8762 /* SearchViewController.swift */; };
@@ -48,6 +52,7 @@
 		ACDC188B2398D3D00091F680 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC188A2398D3D00091F680 /* Bindable.swift */; };
 		ACDC188D2398F42D0091F680 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC188C2398F42D0091F680 /* UIAlertControllerExtension.swift */; };
 		ACE84820239CEEB100BE0915 /* AlbumDetailCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8481F239CEEB100BE0915 /* AlbumDetailCollectionViewDataSource.swift */; };
+		ACE8482B239D44E600BE0915 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8482A239D44E600BE0915 /* DoubleExtension.swift */; };
 		ACEEF1142398225C0092415F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEF1132398225C0092415F /* AppDelegate.swift */; };
 		ACEEF11B2398225E0092415F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEEF11A2398225E0092415F /* Assets.xcassets */; };
 		ACEEF11E2398225E0092415F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEF11C2398225E0092415F /* LaunchScreen.storyboard */; };
@@ -61,6 +66,10 @@
 		AC1F65D5239955C00077B333 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		AC1F65D6239955C00077B333 /* AlbumsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumsViewController.xib; sourceTree = "<group>"; };
 		AC1F65D9239A0DC80077B333 /* AlbumCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		AC2D3AEA239D66FF006104AF /* AlbumsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AC2D3AED239D6799006104AF /* SearchViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AC2D3AEF239D6ED2006104AF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AC2D3AF1239D6F81006104AF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		AC3CE79C2398266300EB8762 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		AC3CE79E2398289100EB8762 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		AC3CE7A32398292A00EB8762 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +106,7 @@
 		ACDC188A2398D3D00091F680 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		ACDC188C2398F42D0091F680 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		ACE8481F239CEEB100BE0915 /* AlbumDetailCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		ACE8482A239D44E600BE0915 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		ACEEF1102398225C0092415F /* DeezerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEEF1132398225C0092415F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACEEF11A2398225E0092415F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +127,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC2D3AE9239D66EF006104AF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D3AEA239D66FF006104AF /* AlbumsViewControllerDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AC2D3AEC239D6787006104AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D3AED239D6799006104AF /* SearchViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		AC3CE7A0239828D900EB8762 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +156,7 @@
 		AC3CE7A1239828E400EB8762 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				AC2D3AEC239D6787006104AF /* Protocols */,
 				ACE84828239D416D00BE0915 /* Controllers */,
 				ACE84827239D416200BE0915 /* Views */,
 				ACE84826239D415700BE0915 /* DataSources */,
@@ -150,6 +177,7 @@
 		AC3CE7A923982C2600EB8762 /* AlbumList */ = {
 			isa = PBXGroup;
 			children = (
+				AC2D3AE9239D66EF006104AF /* Protocol */,
 				ACE84825239D412F00BE0915 /* Controllers */,
 				ACE84824239D412500BE0915 /* Views */,
 				ACE84823239D411900BE0915 /* DataSources */,
@@ -338,6 +366,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		ACE84829239D41D100BE0915 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACEEF11A2398225E0092415F /* Assets.xcassets */,
+				ACEEF1292398238E0092415F /* Color.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		ACEEF1072398225C0092415F = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +394,7 @@
 		ACEEF1122398225C0092415F /* DeezerApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACE84829239D41D100BE0915 /* Resources */,
 				ACEEF125239822DC0092415F /* Helpers */,
 				AC3CE7AB23982C5700EB8762 /* NetworkLayer */,
 				AC3CE7D02398BC7700EB8762 /* cells */,
@@ -364,10 +402,9 @@
 				ACDC18872398D3290091F680 /* ViewModel */,
 				AC3CE7A0239828D900EB8762 /* Controllers */,
 				ACEEF1132398225C0092415F /* AppDelegate.swift */,
-				ACEEF11A2398225E0092415F /* Assets.xcassets */,
+				AC2D3AEF239D6ED2006104AF /* Localizable.strings */,
 				ACEEF11C2398225E0092415F /* LaunchScreen.storyboard */,
 				ACEEF11F2398225E0092415F /* Info.plist */,
-				ACEEF1292398238E0092415F /* Color.xcassets */,
 			);
 			path = DeezerApp;
 			sourceTree = "<group>";
@@ -378,6 +415,7 @@
 				ACEEF126239822EF0092415F /* Extensions */,
 				AC3CE79E2398289100EB8762 /* Navigator.swift */,
 				AC3CE7C82398AC5400EB8762 /* PrintHelper.swift */,
+				ACDC188A2398D3D00091F680 /* Bindable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -388,9 +426,10 @@
 				ACEEF127239822FB0092415F /* UIViewExtension.swift */,
 				AC3CE79C2398266300EB8762 /* UIColorExtension.swift */,
 				AC3CE7A723982A1100EB8762 /* NSObjectExtension.swift */,
-				ACDC188A2398D3D00091F680 /* Bindable.swift */,
 				ACDC188C2398F42D0091F680 /* UIAlertControllerExtension.swift */,
 				AC1F65D123993C810077B333 /* UIImageViewExtension.swift */,
+				ACE8482A239D44E600BE0915 /* DoubleExtension.swift */,
+				AC2D3AF1239D6F81006104AF /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -458,6 +497,7 @@
 				AC570C9A239C4540006771CA /* AlbumDetailViewController.xib in Resources */,
 				ACEEF11E2398225E0092415F /* LaunchScreen.storyboard in Resources */,
 				ACEEF12D239825420092415F /* Color.xcassets in Resources */,
+				AC2D3AF0239D6ED2006104AF /* Localizable.strings in Resources */,
 				AC1F65D8239955C00077B333 /* AlbumsViewController.xib in Resources */,
 				ACEEF11B2398225E0092415F /* Assets.xcassets in Resources */,
 				ACDC18862398D1990091F680 /* AlbumCollectionViewCell.xib in Resources */,
@@ -475,11 +515,13 @@
 				ACDC188B2398D3D00091F680 /* Bindable.swift in Sources */,
 				ACDC18852398D1990091F680 /* AlbumCollectionViewCell.swift in Sources */,
 				AC3CE7BF2398A73800EB8762 /* URLSessionProtocol.swift in Sources */,
+				AC2D3AEB239D66FF006104AF /* AlbumsViewControllerDelegate.swift in Sources */,
 				AC3CE7A823982A1100EB8762 /* NSObjectExtension.swift in Sources */,
 				AC3CE7B92398A6AB00EB8762 /* HTTPError.swift in Sources */,
 				AC3CE7C92398AC5400EB8762 /* PrintHelper.swift in Sources */,
 				AC3CE7C12398A76400EB8762 /* URLResponseExtension.swift in Sources */,
 				AC3CE7A52398292A00EB8762 /* SearchViewController.swift in Sources */,
+				AC2D3AEE239D6799006104AF /* SearchViewControllerDelegate.swift in Sources */,
 				AC570C9C239C4651006771CA /* AlbumHeaderView.swift in Sources */,
 				ACEEF128239822FB0092415F /* UIViewExtension.swift in Sources */,
 				AC3CE7C52398A79700EB8762 /* URLSessionExtension.swift in Sources */,
@@ -506,6 +548,8 @@
 				ACDC188D2398F42D0091F680 /* UIAlertControllerExtension.swift in Sources */,
 				AC1F65DA239A0DC80077B333 /* AlbumCollectionViewDataSource.swift in Sources */,
 				AC3CE79D2398266300EB8762 /* UIColorExtension.swift in Sources */,
+				ACE8482B239D44E600BE0915 /* DoubleExtension.swift in Sources */,
+				AC2D3AF2239D6F81006104AF /* StringExtension.swift in Sources */,
 				AC570C99239C4540006771CA /* AlbumDetailViewController.swift in Sources */,
 				AC3CE7BB2398A70B00EB8762 /* HTTPRequestProtocol.swift in Sources */,
 				ACDC18892398D3670091F680 /* ArtistListViewModel.swift in Sources */,

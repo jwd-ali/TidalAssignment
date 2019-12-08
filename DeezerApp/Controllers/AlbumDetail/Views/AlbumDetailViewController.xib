@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ixy-hJ-77u">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" name="Primary"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="spX-nD-MZt">
                         <size key="itemSize" width="50" height="50"/>
@@ -33,13 +33,13 @@
             </subviews>
             <color key="backgroundColor" name="Primary"/>
             <constraints>
-                <constraint firstItem="ixy-hJ-77u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Axw-qd-Tra"/>
-                <constraint firstItem="ixy-hJ-77u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JsF-te-BJK"/>
-                <constraint firstAttribute="bottom" secondItem="ixy-hJ-77u" secondAttribute="bottom" id="PJd-6S-eDY"/>
-                <constraint firstItem="ixy-hJ-77u" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Zgz-JW-Jel"/>
+                <constraint firstItem="ixy-hJ-77u" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="JMc-es-p7z"/>
+                <constraint firstItem="ixy-hJ-77u" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OLp-Xe-9tr"/>
+                <constraint firstItem="ixy-hJ-77u" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" id="Vk3-uY-2LJ"/>
+                <constraint firstItem="ixy-hJ-77u" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="hFc-WX-UXU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="207" y="142"/>
+            <point key="canvasLocation" x="-690" y="-32"/>
         </view>
     </objects>
     <resources>

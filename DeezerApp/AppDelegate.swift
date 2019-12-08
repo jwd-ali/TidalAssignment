@@ -45,7 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.Common.primary
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().isTranslucent = true
-        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = getRootViewController()
         window?.makeKeyAndVisible()

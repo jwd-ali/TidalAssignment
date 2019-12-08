@@ -12,7 +12,8 @@ class SearchTableViewDataSource: NSObject {
     
     var artists: Artists?
     let cellId: String = "ArtistTableViewCell"
-    weak var viewController: SearchViewController?
+    weak var searchViewControllerDelegate: SearchViewControllerDelegate?
+    
     var tableView: UITableView? {
         didSet {
             self.setupTableView()
@@ -47,9 +48,7 @@ extension SearchTableViewDataSource: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let artist: Artist = artists?.data?[indexPath.row] else { return }
-        let vc = Navigator.getAlbumsViewController()
-        vc.artist = artist
-        self.viewController?.navigationController?.pushViewController(vc, animated: true)
+        searchViewControllerDelegate?.didSelectArtist(artist: artist)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

@@ -29,7 +29,7 @@ class HTTPClient {
     func dataTask(_ request: HTTPRequestProtocol, completion: @escaping CompletionResult) {
         completionResult = completion
         let urlStr = Constants.Service.baseURL as NSString
-        let url = URL(string: urlStr.appendingPathComponent(request.path))!
+        let url = URL(string: urlStr.appendingPathComponent(request.path.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!))!
         var urlRequest = URLRequest(url: url,
                                     cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                     timeoutInterval: Constants.Service.timeout)
@@ -39,10 +39,10 @@ class HTTPClient {
         
         task = session.dataTask(with: urlRequest) { (data, response, error) in
             
-            print(try! JSONSerialization.jsonObject(with: data!, options: .mutableContainers))
-            print(response)
             //return error if there is any error in making request
             if let error = error {
+                Print.error(try? JSONSerialization.jsonObject(with: data ?? Data(), options: .mutableContainers))
+                Print.error(response)
                 self.completionResult(.failure(DeezerError(error.localizedDescription)))
                 return
             }

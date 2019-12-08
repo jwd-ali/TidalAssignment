@@ -32,14 +32,6 @@ class AlbumDetailViewModel {
                 do {
                     let albumDetail = try JSONDecoder().decode(AlbumDetail.self, from: data)
                     self.albumDetail.value = albumDetail
-                    print("=======================================================")
-                    print(albumDetail.title)
-                    for track in albumDetail.tracks?.data ?? [] {
-                        print(track.title)
-                        print(track.duration)
-                        print("-----------------------")
-                    }
-                    print("=======================================================")
                 } catch {
                     Print.error("Unable to decode AlbumDetail", error: error)
                 }

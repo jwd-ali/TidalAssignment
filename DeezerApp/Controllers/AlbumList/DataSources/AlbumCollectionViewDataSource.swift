@@ -12,7 +12,7 @@ class AlbumCollectionViewDataSource: NSObject {
     
     var albums: Albums?
     let cellId: String = "AlbumCollectionViewCell"
-    var viewController: AlbumsViewController?
+    weak var albumsViewControllerDelegate: AlbumsViewControllerDelegate?
     
     var collectionView: UICollectionView? {
         didSet {
@@ -55,11 +55,9 @@ extension AlbumCollectionViewDataSource: UICollectionViewDataSource, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-         guard let album: Album = albums?.data?[indexPath.row] else { return }
-         let vc = Navigator.getAlbumDetailViewController()
-         vc.album = album
-         self.viewController?.navigationController?.pushViewController(vc, animated: true)
-         collectionView.deselectItem(at: indexPath, animated: true)
+        guard let album: Album = albums?.data?[indexPath.row] else { return }
+        albumsViewControllerDelegate?.didSelectAlbum(album: album)
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
 }

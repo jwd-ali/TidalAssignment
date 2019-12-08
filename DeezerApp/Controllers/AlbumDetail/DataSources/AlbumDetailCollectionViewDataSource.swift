@@ -31,18 +31,7 @@ class AlbumDetailCollectionViewDataSource: NSObject {
 }
 
 extension AlbumDetailCollectionViewDataSource: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let contentOffsetY = scrollView.contentOffset.y
-//        print(contentOffsetY)
-//        if contentOffsetY > 0 {
-//            headerView?.animator.fractionComplete = 0
-//            return
-//        }
-//        headerView?.animator.fractionComplete = abs(contentOffsetY) / 100
-//    }
-    
-    
+        
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as? HeaderView
         return headerView!
