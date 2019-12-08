@@ -9,11 +9,14 @@
 import UIKit
 
 class SearchTableViewDataSource: NSObject {
-    
-    var artists: Artists?
+   
+    // MARK: -  Properties
     let cellId: String = "ArtistTableViewCell"
-    weak var searchViewControllerDelegate: SearchViewControllerDelegate?
     
+    // MARK: - Properties Injection
+    var artists: Artists!
+    weak var searchViewControllerDelegate: SearchViewControllerDelegate!
+
     var tableView: UITableView? {
         didSet {
             self.setupTableView()

@@ -10,10 +10,13 @@ import UIKit
 
 class AlbumDetailCollectionViewDataSource: NSObject {
     
+    // MARK: - Properties 
     fileprivate let cellId = "TrackCollectionViewCell"
     fileprivate let headerId = "headerId"
-    var headerView: HeaderView?
-    var albumDetail: AlbumDetail?
+    
+    // MARK: - Properties Injection
+    var headerView: HeaderView!
+    var albumDetail: AlbumDetail!
     
     var collectionView: UICollectionView? {
         didSet {

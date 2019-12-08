@@ -51,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func getRootViewController() -> UIViewController {
-        let contactViewController = Navigator.getSearchViewController()
-        let rootNavigationController = UINavigationController(rootViewController: contactViewController)
+        let searchViewController = Navigator.getSearchViewController()
+        let rootNavigationController = UINavigationController(rootViewController: searchViewController)
         return rootNavigationController
     }
     

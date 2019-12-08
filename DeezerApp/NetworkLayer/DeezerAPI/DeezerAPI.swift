@@ -49,7 +49,7 @@ extension DeezerAPI: HTTPRequestProtocol {
         return nil
     }
     
-    //Return Contact APIs Specific Headers
+    //Return Deezer APIs Specific Headers
     var headers: HTTPHeaders? {
         return nil
     }

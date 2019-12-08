@@ -10,13 +10,18 @@ import UIKit
 
 class AlbumDetailViewController: UIViewController {
     
+    // MARK: - Outlet
     @IBOutlet var collectionView: UICollectionView!
     
+    // MARK: - Properties Injection
     var album: Album
+    
+    // MARK: -  Properties
     fileprivate let padding: CGFloat = 16
     fileprivate let viewModel: AlbumDetailViewModel = AlbumDetailViewModel()
     fileprivate let albumDetailCollectionViewDataSource: AlbumDetailCollectionViewDataSource = AlbumDetailCollectionViewDataSource()
     
+    // MARK: -  Initializer
     init(album: Album) {
         self.album = album
         super.init(nibName: nil, bundle: nil)
@@ -26,6 +31,7 @@ class AlbumDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         albumDetailCollectionViewDataSource.collectionView = collectionView

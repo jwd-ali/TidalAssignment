@@ -10,10 +10,14 @@ import UIKit
 
 class AlbumCollectionViewDataSource: NSObject {
     
-    var albums: Albums?
+    // MARK: -  Properties
     let cellId: String = "AlbumCollectionViewCell"
+    
+    // MARK: - Weak Properties and Delgate
     weak var albumsViewControllerDelegate: AlbumsViewControllerDelegate?
     
+    // MARK: - Properties Injection
+    var albums: Albums!
     var collectionView: UICollectionView? {
         didSet {
             self.setupCollectionView()

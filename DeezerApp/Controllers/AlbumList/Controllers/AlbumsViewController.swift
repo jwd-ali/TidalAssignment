@@ -10,13 +10,17 @@ import UIKit
 
 class AlbumsViewController: UIViewController {
     
+     // MARK: - Outlet
     @IBOutlet var collectionView: UICollectionView!
     
+    // MARK: - Properties Injection
     var artist: Artist
     
+    // MARK: - Properties Injection
     fileprivate let viewModel: AlbumListViewModel = AlbumListViewModel()
     fileprivate let albumCollectionViewDataSource: AlbumCollectionViewDataSource = AlbumCollectionViewDataSource()    
     
+     // MARK: - Initializer
     init(artist: Artist) {
         self.artist = artist
         super.init(nibName: nil, bundle: nil)
@@ -26,6 +30,7 @@ class AlbumsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()

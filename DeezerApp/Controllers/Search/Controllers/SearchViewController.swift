@@ -13,10 +13,12 @@ class SearchViewController: UIViewController {
     // MARK: - Outlet
     @IBOutlet var tableView: UITableView!
     
+    // MARK: -  Properties
     fileprivate let viewModel: ArtistListViewModel = ArtistListViewModel()
     fileprivate let searchTableViewDataSource: SearchTableViewDataSource = SearchTableViewDataSource()
     fileprivate let searchController = UISearchController(searchResultsController: nil)
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationAndSearchBar()
@@ -57,7 +59,7 @@ class SearchViewController: UIViewController {
             }
         }
     }
-    
+    // MARK: - View Lifecycle
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
