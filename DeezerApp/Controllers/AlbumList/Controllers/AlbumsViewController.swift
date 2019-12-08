@@ -12,7 +12,7 @@ class AlbumsViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     
-    var viewModel: AlbumListViewModel = AlbumListViewModel(client: HTTPClient(session: URLSession.shared))
+    var viewModel: AlbumListViewModel = AlbumListViewModel()
     var albumCollectionViewDataSource: AlbumCollectionViewDataSource = AlbumCollectionViewDataSource()
     
     var artist: Artist!
@@ -33,15 +33,14 @@ class AlbumsViewController: UIViewController {
         self.view.backgroundColor = UIColor.Common.primary
     }
     
-    
     func setupCollectionView() {
+        albumCollectionViewDataSource.viewController = self
         albumCollectionViewDataSource.collectionView = self.collectionView
-        //albumCollectionViewDataSource.collectionView?.reloadData()
     }
     
     private func setupBindings() {
           viewModel.isBusy.bind { [unowned self] isBusy in
-              //self.view.showLoader(show: isBusy)
+              self.view.showLoader(show: isBusy)
           }
           
           viewModel.albums.bind { [unowned self] (albums) in

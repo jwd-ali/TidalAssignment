@@ -28,4 +28,13 @@ class Navigator {
     }
     
     
+       // MARK: - Class Functions
+       class func getAlbumDetailViewController() -> AlbumDetailViewController {
+           let albumDetailViewController = AlbumDetailViewController(nibName: AlbumDetailViewController.name, bundle: nil)
+           //searchViewController.viewModel = SearchListViewModel()
+           //searchViewController.searchListDataSource = SearchListDataSource()
+           return albumDetailViewController
+       }
+    
+    
 }

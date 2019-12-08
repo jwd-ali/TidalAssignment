@@ -9,9 +9,9 @@
 import Foundation
 
 class AlbumListViewModel {
-
+    
     private var httpClient: HTTPClient!
-
+    
     var isBusy: Bindable<Bool> = Bindable(false)
     var albums: Bindable<Albums?> = Bindable(nil)
     var error: Bindable<DeezerError?> = Bindable(nil)

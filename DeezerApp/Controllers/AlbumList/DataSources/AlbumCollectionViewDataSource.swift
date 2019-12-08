@@ -12,6 +12,7 @@ class AlbumCollectionViewDataSource: NSObject {
     
     var albums: Albums?
     let cellId: String = "AlbumCollectionViewCell"
+    var viewController: AlbumsViewController?
     
     var collectionView: UICollectionView? {
         didSet {
@@ -36,6 +37,7 @@ extension AlbumCollectionViewDataSource: UICollectionViewDataSource, UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? AlbumCollectionViewCell
         guard let album: Album = albums?.data?[indexPath.row] else { return cell! }
+        cell?.albumImageView.image = UIImage(named: "profile")
         cell?.albumImageView.downloadImage(fromUrl: album.coverMedium)
         cell?.albumTitleLabel.text = album.title.uppercased()
         cell?.albumSubtitleLabel.text = album.releaseDate
@@ -52,7 +54,13 @@ extension AlbumCollectionViewDataSource: UICollectionViewDataSource, UICollectio
         return 0
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         guard let album: Album = albums?.data?[indexPath.row] else { return }
+         let vc = Navigator.getAlbumDetailViewController()
+         vc.album = album
+         self.viewController?.navigationController?.pushViewController(vc, animated: true)
+         collectionView.deselectItem(at: indexPath, animated: true)
+    }
     
 }
 

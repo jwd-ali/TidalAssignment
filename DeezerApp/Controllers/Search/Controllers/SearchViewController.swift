@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     // MARK: - Outlet
     @IBOutlet var tableView: UITableView!
     
-    var viewModel: ArtistListViewModel = ArtistListViewModel(client: HTTPClient(session: URLSession.shared))
+    var viewModel: ArtistListViewModel = ArtistListViewModel()
     var searchTableViewDataSource: SearchTableViewDataSource = SearchTableViewDataSource()
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -30,7 +30,7 @@ class SearchViewController: UIViewController {
     
     private func setupBindings() {
         viewModel.isBusy.bind { [unowned self] isBusy in
-            //self.view.showLoader(show: isBusy)
+            self.view.showLoader(show: isBusy)
         }
         
         viewModel.artists.bind { [unowned self] (artists) in

@@ -12,6 +12,9 @@ extension UIImageView {
 
     public func downloadImage(fromUrl urlString: String) {
         guard let url = URL(string: urlString) else {
+            DispatchQueue.main.async {
+                self.image = UIImage(named: "profile")
+            }
             Print.error("Couldn't create URL from \(urlString)")
             return
         }

@@ -32,7 +32,7 @@ extension DeezerAPI: HTTPRequestProtocol {
         case .getAlbumsWithArtist(let id):
             return "artist/\(id)/albums"
         case .getAlbumDeailsWithAlbum(let id):
-            return "contacts.json\(id)"
+            return "album/\(id)"
         }
     }
     
