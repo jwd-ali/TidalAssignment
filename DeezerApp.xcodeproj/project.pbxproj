@@ -41,10 +41,10 @@
 		AC570CA0239CCCF3006771CA /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC570C9F239CCCF3006771CA /* AlbumDetailViewModel.swift */; };
 		AC570CA5239CE0D8006771CA /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC570CA3239CE0D8006771CA /* TrackCollectionViewCell.swift */; };
 		AC570CA6239CE0D8006771CA /* TrackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC570CA4239CE0D8006771CA /* TrackCollectionViewCell.xib */; };
-		AC8BDC80239D817300F33EFB /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDC7E239D817300F33EFB /* Album.swift */; };
-		AC8BDC81239D817300F33EFB /* Aritist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDC7F239D817300F33EFB /* Aritist.swift */; };
 		AC8BDC83239D81C600F33EFB /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDC82239D81C600F33EFB /* UIAlertControllerExtension.swift */; };
 		AC8BDC85239D821B00F33EFB /* URLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDC84239D821B00F33EFB /* URLResponseExtension.swift */; };
+		ACC7A8D723A41F1D00056A1E /* Aritist.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A8D523A41F1D00056A1E /* Aritist.swift */; };
+		ACC7A8D823A41F1D00056A1E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A8D623A41F1D00056A1E /* Album.swift */; };
 		ACDC187F2398D15E0091F680 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC187D2398D15E0091F680 /* ArtistTableViewCell.swift */; };
 		ACDC18802398D15E0091F680 /* ArtistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDC187E2398D15E0091F680 /* ArtistTableViewCell.xib */; };
 		ACDC18852398D1990091F680 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC18832398D1990091F680 /* AlbumCollectionViewCell.swift */; };
@@ -95,10 +95,10 @@
 		AC570C9F239CCCF3006771CA /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
 		AC570CA3239CE0D8006771CA /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC570CA4239CE0D8006771CA /* TrackCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCollectionViewCell.xib; sourceTree = "<group>"; };
-		AC8BDC7E239D817300F33EFB /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Album.swift; path = ../../../../../Documents/DeezerApp/DeezerApp/Models/Album.swift; sourceTree = "<group>"; };
-		AC8BDC7F239D817300F33EFB /* Aritist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aritist.swift; path = ../../../../../Documents/DeezerApp/DeezerApp/Models/Aritist.swift; sourceTree = "<group>"; };
 		AC8BDC82239D81C600F33EFB /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		AC8BDC84239D821B00F33EFB /* URLResponseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLResponseExtension.swift; sourceTree = "<group>"; };
+		ACC7A8D523A41F1D00056A1E /* Aritist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aritist.swift; sourceTree = "<group>"; };
+		ACC7A8D623A41F1D00056A1E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		ACDC187D2398D15E0091F680 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		ACDC187E2398D15E0091F680 /* ArtistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistTableViewCell.xib; sourceTree = "<group>"; };
 		ACDC18832398D1990091F680 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 		AC3CE7A2239828EC00EB8762 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AC8BDC7E239D817300F33EFB /* Album.swift */,
-				AC8BDC7F239D817300F33EFB /* Aritist.swift */,
+				ACC7A8D623A41F1D00056A1E /* Album.swift */,
+				ACC7A8D523A41F1D00056A1E /* Aritist.swift */,
 				AC570C9D239CCB71006771CA /* AlbumDetail.swift */,
 			);
 			path = Models;
@@ -512,12 +512,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC7A8D723A41F1D00056A1E /* Aritist.swift in Sources */,
 				ACDC188B2398D3D00091F680 /* Bindable.swift in Sources */,
 				ACDC18852398D1990091F680 /* AlbumCollectionViewCell.swift in Sources */,
 				AC3CE7BF2398A73800EB8762 /* URLSessionProtocol.swift in Sources */,
 				AC2D3AEB239D66FF006104AF /* AlbumsViewControllerDelegate.swift in Sources */,
 				AC3CE7A823982A1100EB8762 /* NSObjectExtension.swift in Sources */,
-				AC8BDC80239D817300F33EFB /* Album.swift in Sources */,
 				AC3CE7B92398A6AB00EB8762 /* HTTPError.swift in Sources */,
 				AC3CE7C92398AC5400EB8762 /* PrintHelper.swift in Sources */,
 				AC3CE7A52398292A00EB8762 /* SearchViewController.swift in Sources */,
@@ -541,11 +541,11 @@
 				AC3CE7CB2398BA8A00EB8762 /* SearchTableViewDataSource.swift in Sources */,
 				AC3CE7B32398A62000EB8762 /* DeezerError.swift in Sources */,
 				AC8BDC83239D81C600F33EFB /* UIAlertControllerExtension.swift in Sources */,
+				ACC7A8D823A41F1D00056A1E /* Album.swift in Sources */,
 				AC3CE7BD2398A72400EB8762 /* URLSessionDataTaskProtocol.swift in Sources */,
 				ACEEF1142398225C0092415F /* AppDelegate.swift in Sources */,
 				AC1F65D223993C810077B333 /* UIImageViewExtension.swift in Sources */,
 				AC570CA5239CE0D8006771CA /* TrackCollectionViewCell.swift in Sources */,
-				AC8BDC81239D817300F33EFB /* Aritist.swift in Sources */,
 				AC1F65DA239A0DC80077B333 /* AlbumCollectionViewDataSource.swift in Sources */,
 				AC3CE79D2398266300EB8762 /* UIColorExtension.swift in Sources */,
 				ACE8482B239D44E600BE0915 /* DoubleExtension.swift in Sources */,
