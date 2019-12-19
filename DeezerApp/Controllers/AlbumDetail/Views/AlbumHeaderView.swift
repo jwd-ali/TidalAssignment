@@ -22,16 +22,16 @@ class HeaderView: UICollectionReusableView {
         super.init(frame: frame)
         setupViews()
     }
-    
-    fileprivate func setupViews() {
+    //MARK:- Should be private
+    private func setupViews() {
         // custom code for layout
         addSubview(imageView)
         imageView.fillSuperview()
         setupGradientLayer()
     }
     
-    
-    fileprivate func setupGradientLayer() {
+    //MARK:- should be private
+    private func setupGradientLayer() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
         gradientLayer.locations = [0.5, 1]

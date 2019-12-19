@@ -14,9 +14,6 @@ class AlbumCollectionViewCell: UICollectionViewCell {
     @IBOutlet var albumTitleLabel: UILabel!
     @IBOutlet var albumSubtitleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+   //MARK:- there should not be empty methods 
 
 }

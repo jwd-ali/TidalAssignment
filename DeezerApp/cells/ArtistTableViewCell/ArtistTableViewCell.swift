@@ -14,15 +14,6 @@ class ArtistTableViewCell: UITableViewCell {
     @IBOutlet var artistImageView: UIImageView!
     @IBOutlet var artistTitleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  //MARK:- there should not be empty methods
     
 }

@@ -22,8 +22,9 @@ class ArtistListViewModel {
     
     func searchArtist(_ keyword: String) {
         isBusy.value = true
-        httpClient.dataTask(DeezerAPI.searchArtist(keyword: keyword)) {  (result) in
-            
+        //MARK:- Potential Memory leak
+        httpClient.dataTask(DeezerAPI.searchArtist(keyword: keyword)) { [weak self] (result) in
+            guard let self = self else { return }
             self.isBusy.value = false
             switch result {
             case .success(let data):

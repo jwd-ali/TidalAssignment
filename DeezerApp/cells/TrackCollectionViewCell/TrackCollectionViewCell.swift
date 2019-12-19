@@ -15,9 +15,6 @@ class TrackCollectionViewCell: UICollectionViewCell {
     @IBOutlet var trackSubtitleLabel: UILabel!
     @IBOutlet var dureationLabel: UILabel!
         
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+ //MARK:- there should not be empty methods 
     
 }

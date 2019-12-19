@@ -14,9 +14,11 @@ class SearchViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     // MARK: -  Properties
-    fileprivate let viewModel: ArtistListViewModel = ArtistListViewModel()
-    fileprivate let searchTableViewDataSource: SearchTableViewDataSource = SearchTableViewDataSource()
-    fileprivate let searchController = UISearchController(searchResultsController: nil)
+    
+    //MARK: - Should be private rather than filePrivate
+    private let viewModel: ArtistListViewModel = ArtistListViewModel()
+    private let searchTableViewDataSource: SearchTableViewDataSource = SearchTableViewDataSource()
+    private let searchController = UISearchController(searchResultsController: nil)
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {

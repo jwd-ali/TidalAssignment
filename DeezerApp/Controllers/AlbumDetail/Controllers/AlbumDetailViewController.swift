@@ -17,9 +17,11 @@ class AlbumDetailViewController: UIViewController {
     var album: Album
     
     // MARK: -  Properties
-    fileprivate let padding: CGFloat = 16
-    fileprivate let viewModel: AlbumDetailViewModel = AlbumDetailViewModel()
-    fileprivate let albumDetailCollectionViewDataSource: AlbumDetailCollectionViewDataSource = AlbumDetailCollectionViewDataSource()
+    
+    //MARK: - should be private
+    private let padding: CGFloat = 16
+    private let viewModel: AlbumDetailViewModel = AlbumDetailViewModel()
+    private let albumDetailCollectionViewDataSource: AlbumDetailCollectionViewDataSource = AlbumDetailCollectionViewDataSource()
     
     // MARK: -  Initializer
     init(album: Album) {

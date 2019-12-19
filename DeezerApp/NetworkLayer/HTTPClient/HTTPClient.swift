@@ -37,8 +37,10 @@ class HTTPClient {
         urlRequest.httpBody = request.httpBody
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        task = session.dataTask(with: urlRequest) { (data, response, error) in
-            
+        //MARK:- Possible memory leak use unowned because its static singelton class
+        
+        task = session.dataTask(with: urlRequest) {[unowned self] (data, response, error) in
+           
             //return error if there is any error in making request
             if let error = error {
                 Print.error(try? JSONSerialization.jsonObject(with: data ?? Data(), options: .mutableContainers))

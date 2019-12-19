@@ -22,7 +22,9 @@ class AlbumListViewModel {
     
     func getAlbums(_ id: String) {
         isBusy.value = true
-        httpClient.dataTask(DeezerAPI.getAlbumsWithArtist(id: id)) {  (result) in
+        //MARK:- Possible memory leak
+        httpClient.dataTask(DeezerAPI.getAlbumsWithArtist(id: id)) {[weak self]  (result) in
+            guard let self = self else { return }
             self.isBusy.value = false
             switch result {
             case .success(let data):

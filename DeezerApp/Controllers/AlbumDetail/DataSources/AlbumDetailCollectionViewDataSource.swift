@@ -10,9 +10,11 @@ import UIKit
 
 class AlbumDetailCollectionViewDataSource: NSObject {
     
-    // MARK: - Properties 
-    fileprivate let cellId = "TrackCollectionViewCell"
-    fileprivate let headerId = "headerId"
+    // MARK: - Properties
+    
+    //MARK: - should be private
+    private let cellId = "TrackCollectionViewCell"
+    private let headerId = "headerId"
     
     // MARK: - Properties Injection
     var headerView: HeaderView!
@@ -23,8 +25,8 @@ class AlbumDetailCollectionViewDataSource: NSObject {
             self.setupCollectionView()
         }
     }
-    
-    fileprivate func setupCollectionView() {
+      //MARK:- Should be private
+    private func setupCollectionView() {
         collectionView?.dataSource = self
         collectionView?.delegate = self
         collectionView?.contentInsetAdjustmentBehavior = .never

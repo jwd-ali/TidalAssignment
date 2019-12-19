@@ -17,8 +17,10 @@ class AlbumsViewController: UIViewController {
     var artist: Artist
     
     // MARK: - Properties Injection
-    fileprivate let viewModel: AlbumListViewModel = AlbumListViewModel()
-    fileprivate let albumCollectionViewDataSource: AlbumCollectionViewDataSource = AlbumCollectionViewDataSource()    
+    
+    //MARK:- should be private
+    private let viewModel: AlbumListViewModel = AlbumListViewModel()
+    private let albumCollectionViewDataSource: AlbumCollectionViewDataSource = AlbumCollectionViewDataSource()
     
      // MARK: - Initializer
     init(artist: Artist) {
@@ -38,16 +40,16 @@ class AlbumsViewController: UIViewController {
         setupBindings()
         self.viewModel.getAlbums("\(artist.id)")
     }
-    
-    func setupViews() {
+     //MARK:- should be private
+   private func setupViews() {
         navigationController?.navigationBar.barStyle = .blackOpaque
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationItem.title = artist.name
         self.collectionView.backgroundColor = UIColor.Common.primary
         self.view.backgroundColor = UIColor.Common.primary
     }
-    
-    func setupCollectionView() {
+     //MARK:- should be private
+   private func setupCollectionView() {
         albumCollectionViewDataSource.albumsViewControllerDelegate = self
         albumCollectionViewDataSource.collectionView = self.collectionView
     }
